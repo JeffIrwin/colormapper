@@ -2,7 +2,7 @@
 #ifndef INCLUDE_XML_HELPER_H_
 #define INCLUDE_XML_HELPER_H_
 
-#include <constants.h>
+#include <colormapper_constants.h>
 
 class XPathException: public std::exception
 {
