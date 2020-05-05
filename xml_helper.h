@@ -3,6 +3,7 @@
 #define INCLUDE_XML_HELPER_H_
 
 #include <colormapper_constants.h>
+#include <pugixml.hpp>
 
 class XPathException: public std::exception
 {

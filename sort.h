@@ -2,6 +2,9 @@
 #ifndef INCLUDE_SORT_H_
 #define INCLUDE_SORT_H_
 
+#include <algorithm>
+#include <numeric>
+
 template <typename T> std::vector<unsigned int> sortidx(const std::vector<T>& v)
 {
 	// Instead of sorting a vector v, sort an index array that gives
