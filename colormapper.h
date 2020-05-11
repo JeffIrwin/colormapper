@@ -260,6 +260,13 @@ class ColorMap
 	double nanr, nang, nanb;
 	int imap;
 
+	ColorMap()
+	{
+		paraView = false;
+		imap = -1;
+		inv = false;
+	}
+
 	int load(std::string file, std::string name)
 	{
 		x.clear();
@@ -270,6 +277,7 @@ class ColorMap
 		nang = 0;
 		nanb = 0;
 		space = "RGB";
+		paraView = true;
 
 		std::string ext = file.substr(file.find_last_of(".") + 1);
 		if (ext == "xml")
