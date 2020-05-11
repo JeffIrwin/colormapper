@@ -3,6 +3,14 @@ it maps colors duh
 
 Load colormap data from a JSON or XML resource file and map scalars to RGB color triplets.
 
+## CMake build
+
+    add_subdirectory("/path/to/colormapper/")
+    
+    ...
+    
+    target_link_libraries(myProject colormapper)
+
 ## Usage
 
     #include <colormapper.h>
