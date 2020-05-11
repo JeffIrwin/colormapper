@@ -3,6 +3,14 @@ it maps colors duh
 
 Load colormap data from a JSON or XML resource file and map scalars to RGB color triplets.
 
+## Spaces
+`colormapper` supports the following color spaces, and provides functions for converting between them:
+- RGB
+- XYZ
+- CIELAB
+- Msh
+- HSV
+
 ## CMake build
 
     add_subdirectory("/path/to/colormapper/")
@@ -21,8 +29,6 @@ Load colormap data from a JSON or XML resource file and map scalars to RGB color
     std::string file = "/path/to/ColorMaps5.6.0.json";
     std::string mapname = "Inferno (matplotlib)";
     ColorMap c;
-    c.paraView = true;
-    c.inv = false;
     c.load(file, mapname);
     
     ...
