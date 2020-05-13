@@ -5,11 +5,11 @@ Load colormap data from a JSON or XML resource file and map scalars to RGB color
 
 ## Spaces
 `colormapper` supports the following color spaces, and provides functions for converting between them:
+- CIELAB
+- HSV
+- Msh
 - RGB
 - XYZ
-- CIELAB
-- Msh
-- HSV
 
 ## CMake build
 
