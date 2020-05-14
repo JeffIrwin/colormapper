@@ -1,3 +1,4 @@
+![](https://github.com/JeffIrwin/colormapper/workflows/CI/badge.svg)
 # colormapper
 it maps colors duh
 
