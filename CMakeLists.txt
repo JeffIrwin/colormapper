@@ -1,6 +1,12 @@
 
 set(PROJECT colormapper)
 
+if (APPLE)
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+endif()
+
+project(${PROJECT})
+
 set(SUBMODULE_DIR submodules)
 
 set(XML_DIR  ${SUBMODULE_DIR}/pugixml/src)
