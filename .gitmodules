@@ -10,3 +10,6 @@
 [submodule "submodules/lodepng"]
 	path = submodules/lodepng
 	url = https://github.com/JeffIrwin/lodepng
+[submodule "submodules/bat"]
+	path = submodules/bat
+	url = https://github.com/JeffIrwin/bat
