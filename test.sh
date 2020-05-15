@@ -8,7 +8,7 @@ inputs="./submodules/colormaps/ColorMaps5.0.0.xml ./submodules/colormaps/ColorMa
 frames=("Cool to Warm"
         "Blue to Red Rainbow"
         "CIELab Blue to Red"
-        "X Ray"
+        "Blue to Yellow"
        )
 
 exebase=colormapper
