@@ -11,6 +11,7 @@
 
 //======================================================================
 
+#include <png_helper.h>
 #include <xml_helper.h>
 #include <colormapper_constants.h>
 #include <sort.h>

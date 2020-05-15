@@ -2,25 +2,9 @@
 #include <stdio.h>
 #include <iostream>
 
-#include <lodepng.h>
-
 #include <colormapper.h>
 
 const std::string me = "colormapper";
-
-int savePng(const std::vector<uint8_t>& b, int nx, int ny, std::string f)
-{
-	std::cout << "Writing file \"" << f << "\" ..." << std::endl;
-	std::vector<uint8_t> imageBuffer;
-	unsigned error = lodepng::encode(imageBuffer, b, nx, ny);
-	if (error)
-	{
-		std::cout << "\nError: PNG encoder error " << error << ": "<< lodepng_error_text(error) << std::endl;
-		return error;
-	}
-	lodepng::save_file(imageBuffer, f);
-	return 0;
-}
 
 int main(int argc, char* argv[])
 {
