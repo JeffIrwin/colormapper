@@ -5,6 +5,9 @@
 #include <algorithm>
 #include <numeric>
 
+namespace irwincolor
+{
+
 template <typename T> std::vector<unsigned int> sortidx(const std::vector<T>& v)
 {
 	// Instead of sorting a vector v, sort an index array that gives
@@ -19,6 +22,8 @@ template <typename T> std::vector<unsigned int> sortidx(const std::vector<T>& v)
 
 	return idx;
 }
+
+} // namespace irwincolor
 
 #endif  // INCLUDE_SORT_H_
 

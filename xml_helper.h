@@ -5,6 +5,9 @@
 #include <colormapper_constants.h>
 #include <pugixml.hpp>
 
+namespace irwincolor
+{
+
 class XPathException: public std::exception
 {
   virtual const char* what() const throw()
@@ -24,6 +27,8 @@ int loadXml(std::string& fxml, pugi::xml_document& doc)
 	}
 	return 0;
 }
+
+} // namespace irwincolor
 
 #endif  // INCLUDE_XML_HELPER_H_
 
