@@ -24,10 +24,10 @@ int main(int argc, char* argv[])
 		return -1;
 	}
 
-	ColorMap c;
+	irwincolor::ColorMap c;
 	std::string file = argv[1];
 	std::vector<std::string> names;
-	io = loadColorMapNames(file, names);
+	io = irwincolor::loadColorMapNames(file, names);
 
 	std::string fbase = file.substr(0, file.find_last_of("."));
 
@@ -51,7 +51,7 @@ int main(int argc, char* argv[])
 				pix[ip + 3] = 255;
 			}
 		}
-		io = savePng(pix, nx, ny, fbase + "_" + names[i] + ".png");
+		io = irwincolor::savePng(pix, nx, ny, fbase + "_" + names[i] + ".png");
 		if (io != 0) return io;
 	}
 

@@ -5,6 +5,9 @@
 #include <colormapper_constants.h>
 #include <lodepng.h>
 
+namespace irwincolor
+{
+
 int savePng(const std::vector<uint8_t>& b, int nx, int ny, std::string f)
 {
 	std::cout << "Writing file \"" << f << "\" ..." << std::endl;
@@ -18,6 +21,8 @@ int savePng(const std::vector<uint8_t>& b, int nx, int ny, std::string f)
 	lodepng::save_file(imageBuffer, f);
 	return 0;
 }
+
+} // namespace irwincolor
 
 #endif  // INCLUDE_PNG_HELPER_H_
 

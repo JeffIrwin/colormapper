@@ -19,6 +19,10 @@
 //======================================================================
 
 #include <json.hpp>
+
+namespace irwincolor
+{
+
 using json = nlohmann::json;
 
 //======================================================================
@@ -653,6 +657,8 @@ class ColorMap
 		return rgb;
 	}
 };
+
+} // namespace irwincolor
 
 #endif  // INCLUDE_COLORMAPPER_H_
 
