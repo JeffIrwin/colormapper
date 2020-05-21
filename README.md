@@ -29,7 +29,7 @@ Load colormap data from a JSON or XML resource file and map scalars to RGB color
     // Load colormap data
     std::string file = "/path/to/ColorMaps5.6.0.json";
     std::string mapname = "Inferno (matplotlib)";
-    ColorMap c;
+    irwincolor::ColorMap c;
     c.load(file, mapname);
     
     ...
