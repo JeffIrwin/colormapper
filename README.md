@@ -4,6 +4,8 @@ it maps colors duh
 
 Load colormap data from a JSON or XML resource file and map scalars to RGB color triplets.
 
+For projects that use colormapper, see [maph](https://github.com/JeffIrwin/maph) or [life](https://github.com/JeffIrwin/life).
+
 ## Spaces
 `colormapper` supports the following color spaces, and provides functions for converting between them:
 - CIELAB
@@ -12,8 +14,12 @@ Load colormap data from a JSON or XML resource file and map scalars to RGB color
 - RGB
 - XYZ
 
-## CMake build
+## Download
+_From your project:_
 
+    git submodule add https://github.com/JeffIrwin/colormapper
+
+## CMake build
     add_subdirectory("/path/to/colormapper/")
     
     ...
@@ -21,7 +27,6 @@ Load colormap data from a JSON or XML resource file and map scalars to RGB color
     target_link_libraries(myProject colormapper)
 
 ## Usage
-
     #include <colormapper.h>
     
     ...
@@ -39,5 +44,3 @@ Load colormap data from a JSON or XML resource file and map scalars to RGB color
     std::vector<uint8_t> rgb = c.map(x);
     
     ...
-    
-For more details and usage context, see some of the projects that use colormapper, for example [maph](https://github.com/JeffIrwin/maph) or [life](https://github.com/JeffIrwin/life).
