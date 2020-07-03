@@ -1,6 +1,5 @@
 
-#ifndef INCLUDE_COLORMAPPER_CONSTANTS_H_
-#define INCLUDE_COLORMAPPER_CONSTANTS_H_
+#pragma once
 
 namespace irwincolor
 {
@@ -15,6 +14,4 @@ const int ERR_PNG       = -5;
 const int ERR_FILETYPE  = -6;
 
 } // namespace irwincolor
-
-#endif  // INCLUDE_COLORMAPPER_CONSTANTS_H_
 

@@ -1,6 +1,5 @@
 
-#ifndef INCLUDE_PNG_HELPER_H_
-#define INCLUDE_PNG_HELPER_H_
+#pragma once
 
 #include <colormapper_constants.h>
 #include <lodepng.h>
@@ -23,6 +22,4 @@ int savePng(const std::vector<uint8_t>& b, int nx, int ny, std::string f)
 }
 
 } // namespace irwincolor
-
-#endif  // INCLUDE_PNG_HELPER_H_
 

@@ -1,6 +1,5 @@
 
-#ifndef INCLUDE_XML_HELPER_H_
-#define INCLUDE_XML_HELPER_H_
+#pragma once
 
 #include <colormapper_constants.h>
 #include <pugixml.hpp>
@@ -29,6 +28,4 @@ int loadXml(std::string& fxml, pugi::xml_document& doc)
 }
 
 } // namespace irwincolor
-
-#endif  // INCLUDE_XML_HELPER_H_
 

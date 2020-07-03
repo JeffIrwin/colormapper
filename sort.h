@@ -1,6 +1,5 @@
 
-#ifndef INCLUDE_SORT_H_
-#define INCLUDE_SORT_H_
+#pragma once
 
 #include <algorithm>
 #include <numeric>
@@ -24,6 +23,4 @@ template <typename T> std::vector<unsigned int> sortidx(const std::vector<T>& v)
 }
 
 } // namespace irwincolor
-
-#endif  // INCLUDE_SORT_H_
 
