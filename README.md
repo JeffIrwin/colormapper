@@ -34,7 +34,7 @@ _From your project:_
     // Load colormap data
     std::string file = "/path/to/ColorMaps5.6.0.json";
     std::string mapname = "Inferno (matplotlib)";
-    irwincolor::ColorMap c;
+    irwincolor::Map c;
     c.load(file, mapname);
     
     ...
