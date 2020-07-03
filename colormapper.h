@@ -193,7 +193,7 @@ std::vector<float> msh2rgb(const std::vector<float>& msh)
 	//return lab2rgb(msh2lab(msh));
 }
 
-int loadColorMapNames(std::string file, std::vector<std::string>& names)
+int loadMapNames(std::string file, std::vector<std::string>& names)
 {
 	names.clear();
 
@@ -255,7 +255,7 @@ int loadColorMapNames(std::string file, std::vector<std::string>& names)
 	return 0;
 }
 
-class ColorMap
+class Map
 {
 	public:
 
@@ -265,7 +265,7 @@ class ColorMap
 	double nanr, nang, nanb;
 	int imap;
 
-	ColorMap()
+	Map()
 	{
 		paraView = false;
 		imap = -1;

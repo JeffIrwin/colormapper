@@ -24,10 +24,10 @@ int main(int argc, char* argv[])
 		return -1;
 	}
 
-	irwincolor::ColorMap c;
+	irwincolor::Map c;
 	std::string file = argv[1];
 	std::vector<std::string> names;
-	io = irwincolor::loadColorMapNames(file, names);
+	io = irwincolor::loadMapNames(file, names);
 
 	std::string fbase = file.substr(0, file.find_last_of("."));
 
