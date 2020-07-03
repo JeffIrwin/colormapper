@@ -1,6 +1,5 @@
 
-#ifndef INCLUDE_COLORMAPPER_H_
-#define INCLUDE_COLORMAPPER_H_
+#pragma once
 
 //======================================================================
 
@@ -659,6 +658,4 @@ class Map
 };
 
 } // namespace irwincolor
-
-#endif  // INCLUDE_COLORMAPPER_H_
 
