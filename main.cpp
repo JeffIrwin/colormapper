@@ -2,11 +2,14 @@
 #include <stdio.h>
 #include <iostream>
 
+#include <fire.hpp>
+
 #include <colormapper.h>
 
 const std::string me = "colormapper";
 
-int main(int argc, char* argv[])
+int fired_main(std::string file = fire::arg({0, "<ColorMapFile>",
+			"JSON or XML resource file containing one or more colormaps"}))
 {
 	// Make a colorbar test image for each colormap contained in the
 	// resource file (JSON or XML) given as a command line argument.
@@ -17,15 +20,7 @@ int main(int argc, char* argv[])
 
 	int io = 0;
 
-	if (argc < 2)
-	{
-		std::cout << "Usage:" << std::endl;
-		std::cout << "\t" << me << " ColorMaps.json" << std::endl;
-		return -1;
-	}
-
 	irwincolor::Map c;
-	std::string file = argv[1];
 	std::vector<std::string> names;
 	io = irwincolor::loadMapNames(file, names);
 
@@ -59,4 +54,6 @@ int main(int argc, char* argv[])
 	std::cout << std::endl;
 	return io;
 }
+
+FIRE_NO_SPACE_ASSIGNMENT(fired_main)
 
