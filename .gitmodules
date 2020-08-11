@@ -15,4 +15,4 @@
 	url = https://github.com/JeffIrwin/bat
 [submodule "submodules/fire-hpp"]
 	path = submodules/fire-hpp
-	url = https://github.com/kongaskristjan/fire-hpp
+	url = https://github.com/JeffIrwin/fire-hpp
