@@ -381,6 +381,9 @@ class Map
 				nang = nan[1];
 				nanb = nan[2];
 			}
+			catch (const nlohmann::detail::type_error& e)
+			{
+			}
 			catch (const std::exception& e)
 			{
 				// Do nothing.  Use default NaN color.
