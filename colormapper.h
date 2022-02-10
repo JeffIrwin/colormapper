@@ -272,7 +272,7 @@ class Map
 	}
 
 	int load(std::string file, std::string name)
-	{
+	{ try {
 		x.clear();
 		r.clear();
 		g.clear();
@@ -428,6 +428,15 @@ class Map
 		//	std::cout << "x = " << x[i] << ", r = " << r[i]
 		//	        << ", g = " << g[i] << ", b = " << b[i] << "\n";
 		//}
+
+		}
+		catch (const nlohmann::detail::type_error& e)
+		{
+		}
+		catch (const std::exception& e)
+		{
+			// Do nothing.  Use default NaN color.
+		}
 
 		return 0;
 	}
