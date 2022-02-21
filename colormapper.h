@@ -374,6 +374,10 @@ class Map
 			}
 
 			space = inj[i]["ColorSpace"];
+
+			// TODO: there is something funny here on macOS for maps that don't
+			// define NanColor.  Can we check if NanColor exists before the
+			// try/catch block?  Try/catch isn't working
 			try
 			{
 				std::vector<float> nan = inj[i]["NanColor"];
