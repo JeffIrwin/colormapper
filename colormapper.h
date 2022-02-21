@@ -375,23 +375,30 @@ class Map
 
 			space = inj[i]["ColorSpace"];
 
-			// TODO: there is something funny here on macOS for maps that don't
-			// define NanColor.  Can we check if NanColor exists before the
-			// try/catch block?  Try/catch isn't working
-			try
+			if (inj[i].contains("NanColor"))
 			{
-				std::vector<float> nan = inj[i]["NanColor"];
-				nanr = nan[0];
-				nang = nan[1];
-				nanb = nan[2];
+				//std::cout << "contains NanColor\n\n";
+
+				try
+				{
+					std::vector<float> nan = inj[i]["NanColor"];
+					nanr = nan[0];
+					nang = nan[1];
+					nanb = nan[2];
+				}
+				catch (const nlohmann::detail::type_error& e)
+				{
+				}
+				catch (const std::exception& e)
+				{
+					// Do nothing.  Use default NaN color.
+				}
 			}
-			catch (const nlohmann::detail::type_error& e)
-			{
-			}
-			catch (const std::exception& e)
-			{
-				// Do nothing.  Use default NaN color.
-			}
+			//else
+			//{
+			//	std::cout << "does not contain NanColor\n\n";
+			//}
+
 		}
 		else
 		{
